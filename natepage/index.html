@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>纳特帕格声望 - 艾尔登法环 环境与任务声望获取攻略</title>
+    <meta name="description" content="本站提供《艾尔登法环》中纳特帕格（Nagakiba）相关任务与环境的详细声望获取指南，包括深根底层、黄金树之影DLC内容解析、声望提升技巧及常见问题解答。">
+    <meta name="keywords" content="纳特帕格声望, 艾尔登法环, 深根底层, 黄金树之影DLC, 声望系统, 声望提升">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --bg-dark: #121212;
+            --bg-card: #1e1e1e;
+            --bg-card-hover: #2a2a2a;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --accent-gold: #cfaa6e;
+            --accent-blue: #4da6ff;
+            --border-color: #333;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--accent-gold);
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section {
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-header {
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent-gold);
+            padding-left: 1rem;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+        }
+
+        /* Navigation */
+        header {
+            background-color: rgba(18, 18, 18, 0.95);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-gold);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-primary);
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            padding: 6rem 0;
+            background: linear-gradient(180deg, rgba(18,18,18,0) 0%, rgba(20,20,20,0.8) 100%), 
+                        url('https://picsum.photos/seed/eldenring/1920/600') no-repeat center center/cover;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 4px 12px rgba(0,0,0,0.8);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--accent-gold);
+            color: #000;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(207, 170, 110, 0.4);
+        }
+
+        /* Guide Grid */
+        .guide-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            background-color: var(--bg-card-hover);
+            border-color: var(--accent-gold);
+        }
+
+        .card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+            color: var(--text-primary);
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-meta {
+            display: flex;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--accent-blue);
+            margin-top: auto;
+        }
+
+        /* Detailed Content */
+        .content-block {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+
+        .text-content h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            color: var(--accent-gold);
+        }
+
+        .text-content p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .text-content ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .text-content li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .text-content li::before {
+            content: "•";
+            color: var(--accent-gold);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background-color: var(--bg-card);
+            border-radius: 8px;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            height: fit-content;
+        }
+
+        .sidebar h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .sidebar-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #2a2a2a;
+            font-size: 0.95rem;
+        }
+
+        .sidebar-item:last-child {
+            border-bottom: none;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #555;
+        }
+
+        .status-dot.active {
+            background-color: #4caf50;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background-color: var(--bg-card);
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .faq-question {
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            background-color: var(--bg-card);
+            transition: background-color 0.2s;
+        }
+
+        .faq-question:hover {
+            background-color: var(--bg-card-hover);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            color: var(--text-secondary);
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 1rem 1.5rem 1.5rem;
+            max-height: 500px;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: "-";
+        }
+
+        .faq-item.active .faq-question::before {
+            content: "+";
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a0a0a;
+            padding: 3rem 0;
+            margin-top: 4rem;
+            text-align: center;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-links {
+                display: none; /* Simplified for mobile */
+            }
+
+            .content-block {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                    环境攻略
+                </div>
+                <div class="nav-links">
+                    <a href="#intro">简介</a>
+                    <a href="#tasks">任务流程</a>
+                    <a href="#locations">深根底层</a>
+                    <a href="#faq">常见问题</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>纳特帕格声望</h1>
+                <p>探索深根底层与黄金树之影DLC，获取纳特帕格（Nagakiba）的声望支持，解锁隐藏剧情与特殊奖励。</p>
+                <a href="#tasks" class="btn">开始声望提升指南</a>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section id="intro" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>什么是纳特帕格声望？</h2>
+                    <p>纳特帕格声望是《艾尔登法环》DLC中与“深根底层”区域相关的特殊声望系统。</p>
+                </div>
+                <div class="guide-grid">
+                    <article class="card">
+                        <h3>背景设定</h3>
+                        <p>纳特帕格是黄金树之影DLC中的关键角色，其声望系统与“深根底层”的探索紧密相连。提升声望不仅是推进剧情的必要条件，还会影响部分NPC的互动选项及区域开放情况。</p>
+                        <div class="card-meta">
+                            <span>#DLC内容</span>
+                            <span>#剧情关键</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>声望作用</h3>
+                        <p>高声望状态可能会解锁纳特帕格的专属支线任务，或者在击败特定Boss后提供额外的祝福道具。声望通常通过完成特定任务、击败精英怪或探索隐藏区域来获取。</p>
+                        <div class="card-meta">
+                            <span>#任务解锁</span>
+                            <span>#特殊奖励</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>核心机制</h3>
+                        <p>与传统的卢恩获取不同，声望主要通过交互和剧情选择积累。注意，某些声望选项具有不可逆性，请谨慎选择。</p>
+                        <div class="card-meta">
+                            <span>#不可逆选择</span>
+                            <span>#交互机制</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Task & Location Section -->
+        <section id="tasks" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>声望提升与任务流程</h2>
+                    <p>以下是获取纳特帕格声望的主要途径及关键步骤。</p>
+                </div>
+                
+                <div class="content-block">
+                    <div class="text-content">
+                        <h3>第一步：抵达深根底层</h3>
+                        <p>首先需要从“接肢贵族”所在的区域进入深根底层。这是纳特帕格声望系统的核心发生地。</p>
+                        
+                        <h3>第二步：寻找初始触发点</h3>
+                        <p>在深根底层深处，你会遇到纳特帕格的守卫。通过对话或战斗后的互动，可以开启初步的声望判定。此时建议存档，因为后续的选择会影响声望走向。</p>
+
+                        <h3>第三步：完成支线委托</h3>
+                        <p>纳特帕格会发布一系列与环境探索相关的委托。例如，寻找被遗忘的祷告、清理特定的腐化生物或修复受损的祭坛。每完成一项，声望值就会相应增加。</p>
+
+                        <h3>第四步：关键抉择点</h3>
+                        <p>在任务后期，你会面临一个关于“黄金树未来”的抉择。选择支持纳特帕格的路线将大幅提升声望，并开启后续的隐藏结局分支。</p>
+
+                        <h3>注意事项</h3>
+                        <ul>
+                            <li>确保在提升声望前已装备“赐福”道具，否则部分任务可能无法触发。</li>
+                            <li>部分NPC在深根底层死亡会导致任务链中断，无法恢复声望。</li>
+                            <li>声望上限通常为100，达到上限后需等待特定周期或完成重置任务。</li>
+                        </ul>
+                    </div>
+
+                    <aside class="sidebar">
+                        <h3>任务进度追踪</h3>
+                        <div class="sidebar-item">
+                            <span>开启深根底层</span>
+                            <div class="status-dot active"></div>
+                        </div>
+                        <div class="sidebar-item">
+                            <span>初次接触纳特帕格</span>
+                            <div class="status-dot active"></div>
+                        </div>
+                        <div class="sidebar-item">
+                            <span>净化腐化水源</span>
+                            <div class="status-dot"></div>
+                        </div>
+                        <div class="sidebar-item">
+                            <span>纳特帕格的誓约</span>
+                            <div class="status-dot"></div>
+                        </div>
+                        <div class="sidebar-item">
+                            <span>深根底层守护者</span>
+                            <div class="status-dot"></div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>常见问题解答</h2>
+                    <p>关于纳特帕格声望获取的疑难杂症。</p>
+                </div>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">如何快速刷取纳特帕格声望？</div>
+                        <div class="faq-answer">
+                            <p>目前没有直接刷取声望的机制。最有效的方法是反复完成该区域的支线委托，并确保在关键时刻做出正确的对话选择。建议在每次任务开始前重新读档，以尝试不同的对话选项。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">如果选错了对话选项，声望会下降吗？</div>
+                        <div class="faq-answer">
+                            <p>是的，错误的对话选项会导致声望下降，甚至触发敌对状态。如果发现选错，可以尝试寻找特定的道具或进行忏悔仪式来恢复关系，但这并非对所有错误都有效。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">深根底层里除了纳特帕格，还有其他声望任务吗？</div>
+                        <div class="faq-answer">
+                            <p>深根底层主要围绕纳特帕格展开，但区域内其他NPC（如拉塔恩的残渣）也有独立的声望或好感度系统，与纳特帕格声望互不影响。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">声望满了之后会怎么样？</div>
+                        <div class="faq-answer">
+                            <p>声望达到上限后，纳特帕格会给予特殊的祝福道具，并解锁与该角色相关的专属地图传送点。此外，在某些战斗中，他会提供额外的援护。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">关于我们</a>
+                <a href="#">游戏库</a>
+                <a href="#">更新日志</a>
+                <a href="#">联系支持</a>
+            </div>
+            <p>&copy; 2024 环境攻略网 - 专注艾尔登法环与开放世界探索指南</p>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem; color: #555;">本站内容仅供玩家参考，游戏版权归FromSoftware及万代南梦宫所有。</p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+                          </html>
