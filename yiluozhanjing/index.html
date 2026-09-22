@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遗落战境字幕-高清中文字幕下载与观影指南</title>
+    <meta name="description" content="遗落战境字幕网提供《遗落战境》电影的高清中文字幕下载资源、双语字幕文件及观影指南，包含剧情解析、画质对比与字幕制作技术说明。">
+    <meta name="keywords" content="遗落战境字幕,遗落战境中文,遗落战境下载,遗落战境在线观看,汤姆克鲁斯电影字幕">
+    <style>
+        :root {
+            --primary-color: #e0e0e0;
+            --accent-color: #00bcd4;
+            --bg-color: #0f0f0f;
+            --card-bg: #1a1a1a;
+            --text-main: #ffffff;
+            --text-secondary: #b0b0b0;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(15, 15, 15, 0.95);
+            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1rem 0;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            padding: 4rem 0;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://picsum.photos/seed/oblivionmovie/1200/600') no-repeat center center/cover;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--accent-color);
+            color: #000;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #00acc1;
+            transform: translateY(-2px);
+        }
+
+        /* Main Content Grid */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        /* Content Sections */
+        section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 1rem;
+        }
+
+        .subtitle-card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border: 1px solid #333;
+        }
+
+        .subtitle-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle-lang {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .subtitle-meta {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .subtitle-desc {
+            font-size: 0.95rem;
+            color: #ccc;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #333;
+            padding: 0.2rem 0.6rem;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+        }
+
+        /* Sidebar */
+        aside {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            height: fit-content;
+        }
+
+        .info-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid #333;
+            padding: 1rem 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .faq-answer {
+            margin-top: 0.5rem;
+            color: var(--text-secondary);
+            display: none;
+            font-size: 0.95rem;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            padding: 3rem 0;
+            text-align: center;
+            border-top: 1px solid #333;
+            color: var(--text-secondary);
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo">遗落战境<span>字幕</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#resources">字幕下载</a></li>
+                    <li><a href="#guide">观影指南</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>遗落战境字幕</h1>
+            <p>为您精选《遗落战境》高清中英双语字幕资源，提供精准的时间轴同步与剧情注释，助您完美理解汤姆·克鲁斯主演的反乌托邦科幻巨作。</p>
+            <a href="#resources" class="btn">立即下载字幕</a>
+        </div>
+
+        <div class="container">
+            <div class="main-grid">
+                <!-- Left Column -->
+                <div class="content-column">
+                    <section id="resources">
+                        <h2 class="section-title">字幕资源下载</h2>
+                        
+                        <div class="subtitle-card">
+                            <div class="subtitle-header">
+                                <span class="subtitle-lang">中文简体 - 普通版</span>
+                                <span class="subtitle-meta">大小: 12KB | 时间轴: 精准</span>
+                            </div>
+                            <p class="subtitle-desc">适用于大多数1080P及4K蓝光原盘。包含主要对话翻译，格式为SRT标准格式，方便各类播放器调用。</p>
+                            <div>
+                                <span class="tag">同步率 99%</span>
+                                <span class="tag">无错别字</span>
+                            </div>
+                            <br>
+                            <a href="#" class="btn" style="font-size: 0.9rem; padding: 0.5rem 1.2rem;">下载 SRT 文件</a>
+                        </div>
+
+                        <div class="subtitle-card">
+                            <div class="subtitle-header">
+                                <span class="subtitle-lang">中文繁体 - 增强版</span>
+                                <span class="subtitle-meta">大小: 14KB | 注释: 丰富</span>
+                            </div>
+                            <p class="subtitle-desc">在标准翻译基础上增加了对片中科幻术语（如“黑鸟”无人机、外星母体等）的注释，适合深度观影。</p>
+                            <div>
+                                <span class="tag">繁体显示</span>
+                                <span class="tag">术语注释</span>
+                            </div>
+                            <br>
+                            <a href="#" class="btn" style="font-size: 0.9rem; padding: 0.5rem 1.2rem;">下载 ASS 文件</a>
+                        </div>
+
+                        <div class="subtitle-card">
+                            <div class="subtitle-header">
+                                <span class="subtitle-lang">双语字幕</span>
+                                <span class="subtitle-meta">大小: 16KB | 语言: 中英对照</span>
+                            </div>
+                            <p class="subtitle-desc">中英文并排显示，适合学习英语或对照研究剧情走向，不干扰画面主体。</p>
+                            <div>
+                                <span class="tag">双语对照</span>
+                                <span class="tag">小字体</span>
+                            </div>
+                            <br>
+                            <a href="#" class="btn" style="font-size: 0.9rem; padding: 0.5rem 1.2rem;">下载 SRT 文件</a>
+                        </div>
+                    </section>
+
+                    <section id="guide">
+                        <h2 class="section-title">观影指南与术语解析</h2>
+                        <article>
+                            <h3>剧情背景简介</h3>
+                            <p style="color: #ccc; margin-top: 0.5rem;">
+                                《遗落战境》讲述在不久的将来，地球表面被外星掠食者占领，人类残部在杰克·哈珀（汤姆·克鲁斯 饰）的指挥下生活在高空堡垒中。杰克负责维护无人机，维护着表面世界的假象。随着记忆的复苏和真相的揭露，他开始质疑自己的身份与使命。
+                            </p>
+                            <br>
+                            <h3>重要术语解释</h3>
+                            <ul style="list-style-type: disc; margin-left: 1.5rem; color: #ccc;">
+                                <li><strong>Scavengers (拾荒者)：</strong> 片中人类幸存者组成的游击队，生活在地下。</li>
+                                <li><strong>Mechs (机甲)：</strong> 杰克驾驶的大型战斗机器人，用于对抗外星生物。</li>
+                                <li><strong>Scavengers (拾荒者)：</strong> 片中人类幸存者组成的游击队，生活在地下。</li>
+                            </ul>
+                        </article>
+                    </section>
+                </div>
+
+                <!-- Right Column -->
+                <aside>
+                    <div class="section-title">影片信息</div>
+                    <ul class="info-list">
+                        <li><span>导演</span> <span>约瑟夫·科辛斯基</span></li>
+                        <li><span>主演</span> <span>汤姆·克鲁斯</span></li>
+                        <li><span>上映年份</span> <span>2013</span></li>
+                        <li><span>片长</span> <span>123 分钟</span></li>
+                        <li><span>类型</span> <span>科幻 / 动作 / 冒险</span></li>
+                        <li><span>IMDb评分</span> <span>6.5/10</span></li>
+                    </ul>
+
+                    <div style="margin-top: 2rem;">
+                        <h3 class="section-title" style="font-size: 1.2rem;">常见问题 (FAQ)</h3>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">如何使用下载的 SRT 字幕？ <span>+</span></div>
+                            <div class="faq-answer">
+                                下载 SRT 文件后，将其重命名为与视频文件相同的名称（例如：movie.srt 和 movie.mp4 放在同一文件夹）。使用 PotPlayer、VLC 播放器或系统自带播放器打开视频，通常字幕会自动加载。
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">字幕是否支持蓝光原盘？ <span>+</span></div>
+                            <div class="faq-answer">
+                                是的，提供的 SRT 字幕采用标准时间码格式，完全兼容蓝光原盘、MKV 压缩包以及在线视频流媒体，时间轴经过校准，误差极小。
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">如何修正字幕错别字？ <span>+</span></div>
+                            <div class="faq-answer">
+                                如果发现字幕有错别字，建议使用专门的字幕编辑软件（如Subtitle Edit）打开 SRT 文件进行手动修改，然后保存即可。
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>本站仅提供字幕资源整理与分享，所有内容仅供学习交流使用。</p>
+            <p>《遗落战境》电影版权归相关版权方所有。</p>
+            <p style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.6;">&copy; 2023 遗落战境字幕资源网 版权所有</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <script>
+        function toggleFaq(element) {
+            const parent = element.parentElement;
+            const isActive = parent.classList.contains('active');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+                item.querySelector('.faq-question span').textContent = '+';
+            });
+
+            // Toggle current
+            if (!isActive) {
+                parent.classList.add('active');
+                element.querySelector('.faq-question span').textContent = '-';
+            }
+        }
+    </script>
+</body>
+</html>
